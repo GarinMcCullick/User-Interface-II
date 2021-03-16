@@ -16,11 +16,7 @@ dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
 :focus {
 	outline: 0;
 	}
-body {
-	background: white;
-	line-height: 1;
-	color: black;
-	}
+
 ol, ul {
 	list-style: none;
 	}
@@ -40,6 +36,17 @@ blockquote:before, blockquote:after, q:before, q:after {
 blockquote, q {
 	quotes: "" "";
 	}
+
+html{
+    font-size:62.5%;
+}
+    
+body {
+    background: white;
+    line-height: 1;
+    color: black;
+    font-size:2rem;
+}
 
 h1{
     font-size:3rem;
@@ -81,7 +88,8 @@ h2{
     border:1px solid black;
     width:99%;
     margin:auto;
-    height:1400px;
+    height:100%;
+    padding-bottom:1rem;
 }
 
 .topPortion{
@@ -103,18 +111,19 @@ h2{
     width:30%;
     height:100%;
     padding-left:5%;
+    line-height:2rem;
 }
 
 .projectsButton{
     border:1px solid black;
-    width:40%;
-    height:10%;
+    max-width:40%;
+    max-height:10%;
     text-align:center;
-    padding-top:5%;
+    padding:1rem;
 }
 
 .rightSide p{
-    line-height:2rem;
+    line-height:2.5rem;
     max-height:100%;
 }
 
@@ -130,27 +139,6 @@ h2{
     justify-content:space-evenly;
 }
 
-.pics{
-    margin:1%;
-    max-width:200px;
-    max-height:300px;
-}
-
-.lables1{
-    display:flex;
-    justify-content:space-evenly;
-}
-
-.lables2{
-    display:flex;
-    justify-content:space-evenly;
-}
-
-.lable{
-    width:200px;
-    text-align:center;
-}
-
 footer{
     width:100%;
     height:350px;
@@ -161,19 +149,170 @@ footer{
 }
 
 .footerText{
-    width:30%;
-    height:30%;
+    max-width:30%;
+    max-height:30%;
     text-align:center;
-    font-size:2.5rem;
-    padding-top:2%;
+    font-size:4.5rem;
+    padding:2rem;
+    margin:1rem;
 }
 
 .footerButton{
     border:1px solid black;
-    width:10%;
+    width:20%;
     height:10%;
     text-align:center;
-    padding-top:0.5rem;
-    padding-bottom:0.5rem;
-    font-size:1.5rem;
+    padding:1.5rem;
+    margin-top:2rem;
+    font-size:2.5rem;
+}
+
+.pics{
+    text-align:center;
+}
+
+/*viewport at 500px (mobile)*/
+@media only screen and (max-width: 600px) {
+
+    h1{
+        text-align:center;
+        margin-bottom:2rem;
+        margin-top:2rem;
+    }
+
+    .nav{
+        display:flex;
+        flex-flow:column wrap;
+        margin:auto;
+        width:25%;
+        margin-bottom:-5rem;
+        text-align:center;
+    }
+
+
+    .backgroundBox{
+        border:0px solid black;
+    }
+
+    h2{
+        display:none;
+    }
+
+    .topPortion{
+        max-width:99%;
+        max-height:40%;
+        display:flex;
+        flex-flow:column-reverse wrap;
+    }
+
+    .projectsButton{
+        border:0px solid black;
+        margin:auto;
+        font-size:3.5rem;
+    }
+    
+    .pic1{
+        width:90%;
+        margin:auto;
+        overflow:hidden;
+        margin-bottom:2rem;
+    }
+
+    .rightSide{
+        height:10%;
+        width:90%;
+        margin:auto;
+        padding:0;
+        text-align:center;
+        margin-bottom:2rem;
+    }
+
+    .footerText{
+        max-width:40%;
+        max-height:40%;
+    }
+
+    .footerButton{
+        border:1px solid black;
+        width:20%;
+        height:10%;
+        padding-bottom:3rem;
+        margin-top:-1rem;
+    }
+
+}
+
+/*viewport at 800px (tablet)*/
+@media only screen and (max-width: 800px){
+
+h1{
+    text-align:center;
+    margin-bottom:2rem;
+    margin-top:2rem;
+}
+
+.nav{
+    display:flex;
+    flex-flow:column wrap;
+    margin:auto;
+    width:25%;
+    margin-bottom:-5rem;
+    text-align:center;
+}
+
+
+.backgroundBox{
+    border:0px solid black;
+}
+
+h2{
+    display:none;
+}
+
+.topPortion{
+    max-width:99%;
+    max-height:40%;
+    display:flex;
+    flex-flow:column-reverse wrap;
+}
+
+.projectsButton{
+    border:0px solid black;
+    margin:auto;
+    font-size:3.5rem;
+}
+
+.pic1{
+    width:90%;
+    margin:auto;
+    overflow:hidden;
+    margin-bottom:2rem;
+}
+
+.rightSide{
+    height:10%;
+    width:90%;
+    margin:auto;
+    padding:0;
+    text-align:center;
+    margin-bottom:2rem;
+}
+
+.pics{
+    margin:3.3rem;
+}
+
+.footerText{
+    max-width:40%;
+    max-height:40%;
+}
+
+.footerButton{
+    border:1px solid black;
+    width:20%;
+    height:10%;
+    padding-bottom:3rem;
+    margin-top:-1rem;
+}
+
 }
